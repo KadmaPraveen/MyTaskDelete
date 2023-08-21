@@ -1,0 +1,26 @@
+
+
+<div class="contatiner">
+  <app-left></app-left>
+<div class="row" >
+
+        <div class="col-md-3 col-sm-6" *ngFor="let p of list" >
+            <img class="card-img-top" src="http://localhost:5251/Uploads/{{p.picturePath}}" alt="Card image cap">
+            <div class="card-body" >
+              <h6 class="card-title">{{p.name}}</h6>
+              <!-- <p>{{p.shortDescription}}</p> -->
+           <span>price:{{p.unitPrice}}</span> <br>
+
+           <span>Quantity:{{p.unitInStock}} </span> <br>
+
+           <div>
+
+           </div>
+              <a href="#" class="btn btn-primary"routerLink="productdetails/{{p.productId}}">details</a>
+            </div>
+          </div>
+       
+
+</div>
+
+</div>

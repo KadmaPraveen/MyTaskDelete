@@ -1,0 +1,70 @@
+<div class="container-fluid">
+
+    <div class="card" >
+        <div class="card-body">
+
+
+<!-- Pills navs -->
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="tab-login" routerLink="login">Login</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link"  routerLink="/register">Register</a>
+  </li>
+</ul>
+<!-- Pills navs -->
+
+<!-- Pills content -->
+<div class="tab-content">
+  <div class="tab-pane fade show active">
+    <form>
+      <div class="text-center mb-3">
+        <p>Sign in with:</p>
+    
+      </div>
+
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="loginName" [(ngModel)]="username" name="username"
+        class="form-control"placeholder="Email or username" />
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="loginPassword"
+        [(ngModel)]="password" name="password" class="form-control" 
+         placeholder="password"/>
+      </div>
+
+      <!-- 2 column grid layout -->
+      <div class="row mb-4">
+        <div class="col-md-6 d-flex justify-content-center">
+          <!-- Checkbox -->
+     
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+          <!-- Simple link -->
+          <a href="#!">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4"
+      (click)="submit()"
+      >Sign in</button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Not a member? <a routerLink="/register">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+</div>
+<!-- Pills content -->
+</div>
+</div>
+</div>
